@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import PeoplePage from "pages/PeoplePage";
+import PeoplePage from "pages/PeoplePage/PeoplePage";
 import App from "App";
 
 export default function Routes() {
