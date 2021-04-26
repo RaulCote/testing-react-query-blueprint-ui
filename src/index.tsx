@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Routes from "Routes";
+import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 
 const queryClient = new QueryClient();
 
