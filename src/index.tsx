@@ -1,17 +1,23 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { BrowserRouter as Router } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Routes from "Routes";
 import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+import Layout from "Layout";
+import Routes from "Routes";
 
 const queryClient = new QueryClient();
 
 ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <Routes />
+      <Router>
+        <Layout>
+          <Routes />
+        </Layout>
+      </Router>
     </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById("root")
