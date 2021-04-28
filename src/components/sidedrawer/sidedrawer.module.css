@@ -1,0 +1,11 @@
+.sideDrawerLink {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+.sideDrawerLink:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

@@ -4,6 +4,7 @@ import {
   Position,
 } from "@blueprintjs/core";
 
+import drawer from "./drawer.module.css";
 import backdrops from "styles/backdrops.module.css";
 
 interface IDrawer extends IDrawerProps {
@@ -15,6 +16,7 @@ export default function Drawer({
   backdropClassName = backdrops.lightOpacity,
   canOutsideClickClose = true,
   children,
+  className = drawer.container,
   hasBackdrop = true,
   isOpen = true,
   onClose,
@@ -25,6 +27,7 @@ export default function Drawer({
     <DrawerBlueprint
       backdropClassName={backdropClassName}
       canOutsideClickClose={canOutsideClickClose}
+      className={className}
       hasBackdrop={hasBackdrop}
       isOpen={isOpen}
       position={position}
